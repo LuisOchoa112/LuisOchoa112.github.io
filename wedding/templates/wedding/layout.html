@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+{% load static %}
+<html lang="en">
+    <head>
+        <title> Luis & Aleena's Wedding </title>
+        <img src="/static/wedding/images/flowers1-top.png" style="width: 80%">
+    </head>
+    <body>
+        <link rel= "stylesheet" href="{% static 'wedding/styles.css' %}">
+
+        {% block body %}
+        {% endblock %}
+    </body>
+</html>

@@ -1,0 +1,23 @@
+{% extends "wedding/layout.html" %}
+
+
+
+{% block body %}
+
+    <div class= "div wedding_header">
+        <h1>Luis & Aleena's Wedding</h1>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2>Location of the Venue</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.5084188942315!2d-121.2401458241151!3d37.801558671978626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80904040c37425c9%3A0x532623dca7b7f834!2sChez%20Shari%20Wedding%20%26%20Conference%20Center!5e0!3m2!1sen!2sus!4v1693630449246!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <br>
+    <br>
+    <br>
+    <br>
+    <a href="{% url 'wedding:RSVP' %}"> <button>RSVP Here </button> </a>
+
+{% endblock %}

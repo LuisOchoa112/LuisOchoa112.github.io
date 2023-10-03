@@ -1,0 +1,29 @@
+{% extends 'wedding/layout.html' %}
+
+{% block body %}
+    <h1> RSVP </h1>
+
+    <div class="div dropdown">
+    <form method="post">
+        {% csrf_token %}
+        <label for="num_rsvps">Number of RSVPs:</label>
+        <input type="number" name="num_rsvps">
+        <button type="submit">Submit</button>
+    </form>
+  
+    {% if rsvps %}
+        <h2>RSVP Details:</h2>
+        {% for rsvp_form in rsvps %}
+            <form method="post" class="form form-inline">
+                {% csrf_token %}
+                {{ rsvp_form.as_p }}
+                
+        </form>
+        {% endfor %}
+        <button type="submit">RSVP</button>
+    {% endif %}
+    </div>
+{% endblock %}
+
+
+
